@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; font-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#050505">
+<title>THE CONFORMITY EXPERIMENT</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23050505'/%3E%3Crect x='5' y='6' width='22' height='4' fill='%23e10600'/%3E%3Crect x='5' y='12' width='15' height='4' fill='%23ffffff'/%3E%3Crect x='5' y='18' width='20' height='4' fill='%23ffffff'/%3E%3Crect x='5' y='24' width='11' height='3' fill='%23ffffff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="bg" aria-hidden="true">
+  <div class="bg__lines"></div>
+  <div class="bg__glow bg__glow--a"></div>
+  <div class="bg__glow bg__glow--b"></div>
+</div>
+
+<div id="app" class="app">
+  <header class="topbar">
+    <span class="mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+    <div class="lang" id="lang-group" role="group" aria-label="Language">
+      <button type="button" class="lang__btn" data-action="lang" data-value="en" lang="en" dir="ltr" aria-pressed="true">English</button>
+      <button type="button" class="lang__btn" data-action="lang" data-value="ar" lang="ar" dir="rtl" aria-pressed="false">العربية</button>
+      <button type="button" class="lang__btn" data-action="lang" data-value="ckb" lang="ckb" dir="rtl" aria-pressed="false">کوردی</button>
+      <button type="button" class="lang__btn" data-action="lang" data-value="syr" lang="syr" dir="rtl" aria-pressed="false">ܣܘܪܝܬ</button>
+    </div>
+  </header>
+
+  <div class="progress">
+    <div class="progress__meta" aria-hidden="true">
+      <span id="progress-step"></span>
+      <span id="progress-name"></span>
+    </div>
+    <div class="progress__bar" id="progress-bar" role="progressbar" aria-label="Progress" aria-valuemin="1" aria-valuemax="8" aria-valuenow="1">
+      <div class="progress__fill" id="progress-fill"></div>
+    </div>
+  </div>
+
+  <main id="main" class="stage-host" tabindex="-1"></main>
+</div>
+
+<div id="live" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+<noscript>
+  <div class="noscript">
+    <p lang="en" dir="ltr">This experiment needs JavaScript. Please enable it and reload the page.</p>
+    <p lang="ar" dir="rtl">تحتاج هذه التجربة إلى تفعيل JavaScript. يُرجى تفعيله ثم إعادة تحميل الصفحة.</p>
+    <p lang="ckb" dir="rtl">ئەم تاقیکردنەوەیە پێویستی بە JavaScript هەیە. تکایە چالاکی بکە و پەڕەکە دووبارە باربکەرەوە.</p>
+    <p lang="syr" dir="rtl">ܢܣܝܘܢܐ ܗܢܐ ܒܥܐ JavaScript. ܦܬܚ ܠܗ ܘܛܥܘܢ ܬܘܒ ܠܦܐܬܐ.</p>
+  </div>
+</noscript>
+
+</body>
+</html>
